@@ -87,13 +87,6 @@ result <- produitlien %>%
   group_by(ident, liensimpl, finna_r) %>%
   summarize(montfi = sum(montfi, na.rm=TRUE)) 
 
-# Sauvegarder les résultats
-saveRDS(produitlien, "produitlien21_sc1.Rda")
-
-
-# D'abord, création des variables correspondant à l'hypothèse 1
-
-
 for (q in 0:3) {
   df <- result %>% filter(liensimpl == q) %>% ungroup() # Garder les lignes où liensimpl est égal à q
   
@@ -147,9 +140,6 @@ rp <- read_dta(paste0(pat21,"/produit.dta"))%>%
 
 rp <- rp %>%
   rename_with(~paste0(., "_rp"), -c("ident"))
-
-# Sauvegarder les données temporairement
-saveRDS(rp, file = "housing_rp.Rda")
 
 merged_data <- men %>%
   left_join(rp, by = "ident") 
