@@ -29,17 +29,19 @@ set more off
 *       PATHS             *
 *-------------------------*
 
-* MODIFY THAT HERE
-global pat04 "C:\Users\mthsa\Desktop\Data\HVP\raw_dta\2004\EP2004_Nicolas"			// input = HVP 2004 (MODIFY NICOLAS)
-global pat10 "C:\Users\mthsa\Desktop\Data\HVP\raw_dta\2010\EP2010_Quetelet\Stata"			// input = HVP 2010
+global pat04_revenus "C:\Users\mthsa\Desktop\Data\HVP\raw_dta\EP2004_Nicolas"			// input not in Quetelet data
+
+global pat04 "C:\Users\mthsa\Desktop\Data\HVP\raw_dta\2004\Stata"			// input = HVP 2004
+global pat10 "C:\Users\mthsa\Desktop\Data\HVP\raw_dta\2010\STATA\Methodologie10"			// input = HVP 2010
 global pat14 "C:\Users\mthsa\Desktop\Data\HVP\raw_dta\2014\Stata"			// input = HVP 2014
 global pat18 "C:\Users\mthsa\Desktop\Data\HVP\raw_dta\2018\Stata"			// input = HVP 2018
-* MODIFY THAT HERE
-global pat20 "C:\Users\mthsa\Desktop\Data\HVP\raw_dta\2020_temp\stata"			// input = HVP 2020
+global pat20 "C:\Users\mthsa\Desktop\Data\HVP\raw_dta\2020\Stata"			// input = HVP 2020
 
 global temp  "C:\Users\mthsa\Desktop\Data\HVP\temp"			// folder for outputs
 
-global dofiles "C:\Users\mthsa\Dropbox\paper_2_QQ\dofiles"			// folder with code files
+global analysis_data  "C:\Users\mthsa\Desktop\Data\Articles\Children_Wealth"			// folder for outputs
+
+global dofiles "C:\Users\mthsa\Nextcloud\WIDE\Children_Wealth\Code\Stata"			// folder with code files
 
 
 *-------------------------*

@@ -1,12 +1,27 @@
-********************************************************************************
-***                                                                          ***
-***                         2004 DATA SCRIPT                                 ***
-***     This script is designed to prepare data from the 2004 survey.        ***
-***                   LETURCQ / SANSU - 11/05/2023                           ***
-***                                                                          ***
-********************************************************************************
+*------------------------------------------------------------------------------*
+*------------------------------------------------------------------------------*
+*                                                                              *
+*                           CHILDREN'S WEALTH                                  *
+*                                                                              *
+*------------------------------------------------------------------------------*
+*------------------------------------------------------------------------------*
+*                                                                              *
+* 01_Construct_CW_Pat04: prepares data from the 2004 survey.                   *
+*                                                                              *
+*------------------------------------------------------------------------------*
+* Inputs: French Wealth Survey datasets (2004)                                 *
+* Outputs: assets_2004.dta                                                     *
+*------------------------------------------------------------------------------*
+* Creation date: 2020                                                          *
+* Update: 03/2024                                                              *
+*------------------------------------------------------------------------------*
+* Author(s): Marion Leturcq / Mathis Sansu                                     *
+*------------------------------------------------------------------------------*
 
-set more off
+
+*-------------------------*
+*       CLEAR             *
+*-------------------------*
 
 cap erase $temp\pr_cj.dta
 cap erase $temp\pr_cj_men.dta
@@ -22,12 +37,12 @@ cap erase $temp\children.dta
 *** en 2004 : les revenus (source fiscale) sont dans une base à part 
 *** => on commence par les mettre avec la base INDIVIDU
 
-use $pat04\revenus2004, clear
+use $pat04_revenus\revenus2004, clear
 
 drop if identind == ""
 duplicates drop
 keep identmen identind noi zsali zchoi ztsai zrsti zalri zreti ///
-zrtoi zperi zragi zrici zrnci
+	 zrtoi zperi zragi zrici zrnci
 so identind
 tempfile revfiscal
 save `revfiscal', replace
@@ -39,6 +54,7 @@ drop if _m == 2
 drop _m
 recode z* (. = 0)
 save $temp\INDIVIDU2004, replace
+
 
 ***** repérage des assets
 
@@ -69,10 +85,10 @@ gen enfant_PR_seul = (lien == "3" & enf == "2")
 gen enfant_CJ_seul = (lien == "3" & enf == "3")  
 
 keep ident identind age sexe enfant_PR enfant_couple enfant_PR_seul ///
-enfant_CJ_seul occupa jepprof jemprof cyfran posit viecou matri etudi ///
-gparpat gparmat herdon_i herdon1_i herdon2_i na1 tio paysnai anais pere ///
-mere statut cs dieg diep dies diplo pond z* herdon1_i   herdon2_i ///
-gestsep_i duree 
+	 enfant_CJ_seul occupa jepprof jemprof cyfran posit viecou matri etudi ///
+	 gparpat gparmat herdon_i herdon1_i herdon2_i na1 tio paysnai anais pere ///
+	 mere statut cs dieg diep dies diplo pond z* herdon1_i   herdon2_i ///
+	 gestsep_i duree 
 
 tempfile children
 so identind
@@ -81,7 +97,17 @@ save $temp\children, replace
 
 ** 1.1/ assets financiers des enfants
 
-use $pat04\PRODUIT, clear
+use $pat04\montant_prod, clear
+so ide
+quietly by ide:  gen dup = cond(_N==1,0,_n)
+drop if dup > 1
+drop dup
+save $temp\montant_prod, replace
+
+use $pat04\produit, clear
+merge m:1 identprod using $temp\montant_prod
+drop _m
+
 ren identpos identind
 so identind
 merge m:1 identind using $temp\children
@@ -109,7 +135,10 @@ save `fin_enf'
 
 ** 1.2/ assets immobilier des enfants 
 
-use $pat04\PRODUIT, clear
+use $pat04\produit, clear
+merge m:1 identprod using $temp\montant_prod
+drop _m
+
 keep if nature == "2"
 ren algacq acqdet
 keep ident identprod mtsimul paraut acqdet
@@ -135,7 +164,11 @@ save `immo', replace
 
 *** Cas 2: on n'arrive pas à retrouver le logement pour lequel l'emprunt a été contracté
 
-use $pat04\produit_origine, clear
+*use $pat04\produit_origine, clear
+use $pat04\produit, clear
+merge m:1 identprod using $temp\montant_prod
+drop _m
+
 keep if nature == "6" & (detqua== "01" | detqua == "02")
 keep ident montcla kdu e_montcla e_kdu
 recode montcla kdu (999999998/999999999 = .)
@@ -227,7 +260,10 @@ save $temp\pr_cj_men,replace
 
 **** 2.1.1/ assets financiers PR et CJ détenu en biens propres
 
-use $pat04\PRODUIT, clear
+use $pat04\produit, clear
+merge m:1 identprod using $temp\montant_prod
+drop _m
+
 ren identpos identind
 so identind
 merge m:1 identind using $temp\pr_cj
@@ -257,7 +293,10 @@ save `fin_pr_cj'
 
 **** 2.1.2/ assets financiers PR et CJ détenus conjointement
 
-use $pat04\PRODUIT, clear
+use $pat04\produit, clear
+merge m:1 identprod using $temp\montant_prod
+drop _m
+
 keep if nature == "1" & nop == "00"
 keep ident finna montcla mtsimul
 so ident 
@@ -290,7 +329,10 @@ save `fin_pr_cj', replace
 
 ** 2.2/ assets immobilier des PR et CJ
 
-use $pat04\PRODUIT, clear
+use $pat04\produit, clear
+merge m:1 identprod using $temp\montant_prod
+drop _m
+
 keep if nature == "2"
 ren algacq acqdet
 keep ident identprod montcla parpr parcj parmen paraut acqdet mtsimul e_montmin
@@ -319,7 +361,10 @@ save `immo', replace
 * => minimize wealth of children
 *gen Wimmo_net_enf = immo_valeur_nette * (paraut / total_autre_PR) / 100 if autre_PR == 0 
 
-use $pat04\PRODUIT_origine, clear
+use $pat04\produit, clear
+merge m:1 identprod using $temp\montant_prod
+drop _m
+
 keep if nature == "6" & (detqua == "01" | detqua == "02")
 keep ident montcla kdu e_montcla
 recode montcla kdu (999999998 999999999 = .)
@@ -347,7 +392,10 @@ save `immo_pr_cj'
 ** 2.3 Business assets 
 
 * 2.3.1 Actifs
-use $pat04\PRODUIT, clear
+use $pat04\produit, clear
+merge m:1 identprod using $temp\montant_prod
+drop _m
+
 keep if nature == "3" |nature == "4"
 keep identprod ident identpos montmin montmax nature parhm parpr parcj parmen ///
 					 profna mtsimul pond npoids
@@ -364,7 +412,10 @@ tempfile pro
 save `pro'
 
 * 2.3.1 Passifs
-use $pat04\PRODUIT_origine, clear
+use $pat04\produit, clear
+merge m:1 identprod using $temp\montant_prod
+drop _m
+
 * il faut revenir à la table d'origine pour avoir les dettes 
 * attention : ici aussi, les montants sont donnés en euros => pas besoin de convertir
 keep if nature == "6" & (natemp == "05" | natemp == "06")
@@ -396,7 +447,10 @@ tempfile pro_pr_cj
 save `pro_pr_cj'
 
 * 2.4 Autres dettes
-use $pat04\PRODUIT_origine, clear
+use $pat04\produit, clear
+merge m:1 identprod using $temp\montant_prod
+drop _m
+
 * il faut revenir à la table d'origine pour avoir les dettes 
 * attention : ici aussi, les montants sont donnés en euros => pas besoin de convertir
 keep if nature == "6" & (detqua == "04" | detqua == "05" | detqua == "06")
@@ -412,7 +466,10 @@ tempfile dette_pr_cj
 save `dette_pr_cj'
 
 * 2.5 Autres créances (prêts)
-use $pat04\PRODUIT_origine, clear
+use $pat04\produit, clear
+merge m:1 identprod using $temp\montant_prod
+drop _m
+
 * il faut revenir à la table d'origine pour avoir les dettes 
 * attention : ici aussi, les montants sont donnés en euros => pas besoin de convertir
 keep if nature == "5" 
