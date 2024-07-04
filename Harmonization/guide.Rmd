@@ -1,0 +1,146 @@
+---
+title: "A Guide to the Harmonization of the French Patrimoine Surveys"
+author: "Yanis Rahmouni"
+date: "`r Sys.Date()`"
+output: 
+  html_document:
+    theme: cosmo
+    toc: yes
+    df_print: paged
+runtime: shiny
+---
+
+<style>
+body {
+text-align: justify}
+</style>
+
+```{r packages, include=FALSE}
+library(shiny)
+library(dplyr)
+library(DT)
+library(tidyr)
+
+```
+
+# Introduction
+
+The *Patrimoine* survey aims to comprehensively assess the financial, professional and property assets, along with the liabilities, of individuals and households in France. It facilitates comparisons between different households and analyses wealth distribution within the same household. Besides core wealth metrics, the survey gathers supplementary information on familial and vocational trajectories, including inheritances, donations and income profiles. Conducted by INSEE, the survey was administered every six years from 1986 to 2010, and then every three years. Since 2014, some households have contributed longitudinal data. To date, there are 8 publicly available waves of the Patrimoine surveys. 
+
+**Deuxième paragraphe pour motiver le guide** : 
+
+-   Variables changeantes
+-   Revenir sur les appellations et les systèmes français (produits financiers, diplômes, contrats de mariage)
+-   Traduire les descriptions des variables principales
+-   Tenir compte de l'inflation dans l'harmonisation
+-   Proposer une arborescence commune. 
+
+## Overview of Documentation Provided by CASD :
+
+-   Guide du panel (2020)
+-   CASD file : On peut avoir les catégories, mais pas pour tous les fichiers.
+-   Questionnaires : (-) Peu utile parce que les noms de variables sont remaniés (+) Permet de diviser les variables en grandes sections, et de voir comment les répondants sont confrontés à des changements.
+-   Dictionnaires des codes : Seule façon d'avoir les catégories de manière constante dans le temps.
+-   Questionnaire des modules supplémentaires
+
+# Data Download and Directory Structure Setup 
+
+- CASD vs Progedo
+- Ici : Fonction qui crée ton arborescence à partir des fichiers zip téléchargés par Progedo. De cette façon tous les scripts du GitHub deviennent ensuite lisibles à condition de les respecter.
+
+- Arborescence choisie : 
+  - inputs > 2014 > Doc / Csv / Stata
+  - inputs > 2017 > Doc / Csv / Stata 
+  - Cas spécifique de 2010 : Methodologie10/Methodologie04
+
+
+# Facilitating the harmonization of the Patrimoine survey. 
+
+```{r import, include=FALSE}
+metadata <- read.csv("D:/WIDE/Harmonization/metadata.csv")
+```
+
+```{r shiny, include=FALSE}
+# Define the UI
+ui <- fluidPage(
+  titlePanel("Survey Metadata Explorer"),
+  
+  textInput("variable_name", "Search Variable Name", placeholder = "Type variable name to filter..."),
+  
+  dataTableOutput("comparisonTable")
+)
+
+server <- function(input, output) {
+  
+  filteredData <- reactive({
+    data <- metadata
+    
+    if (input$variable_name != "") {
+      data <- data %>% filter(grepl(input$variable_name, first_id, ignore.case = TRUE))
+    }
+    
+    data
+  })
+  
+  output$comparisonTable <- renderDataTable({
+    data <- filteredData()
+    
+    # Create a comparison table by pivoting the data
+    comparison_data <- data %>%
+      select(year, category, first_id, label) %>%
+      distinct() %>%
+      pivot_wider(names_from = year, values_from = label, values_fn = list(label = function(x) paste(unique(x), collapse = ", "))) %>%
+      arrange(first_id, category)  # Sort by first_id and then by category
+    
+    # Format the table with proper captions and styling
+    datatable(comparison_data, options = list(pageLength = 10, order = list(list(2, 'asc'), list(1, 'asc'))), 
+              caption = htmltools::tags$caption(
+                style = 'caption-side: top; text-align: center;',
+                'Comparison of Categories and Labels Across Years'
+              ))
+  })
+}
+
+# Run the Shiny app
+shinyApp(ui = ui, server = server)
+```
+```{r app, include=TRUE}
+# Run the Shiny app
+shinyApp(ui = ui, server = server)
+```
+
+# Translation of the variables
+
+```{r translation, include = FALSE}
+library(polyglotr)
+
+# Define UI for the Shiny app (use a different name for the UI function)
+ui_shiny_app <- fluidPage(
+  titlePanel("Variable Description Translator"),
+  sidebarLayout(
+    sidebarPanel(
+      textInput("variable_name", "Enter Variable Name:", "")
+    ),
+    mainPanel(
+      tableOutput("results")
+    )
+  )
+)
+
+# Define server logic for the Shiny app (use a different name for the server function)
+server_shiny_app <- function(input, output) {
+  data <- read.csv("D:/WIDE/Harmonization/list_of_variable.csv", stringsAsFactors = FALSE)
+  
+  output$results <- renderTable({
+    req(input$variable_name)
+    filtered_data <- data %>%
+      filter(first_id == input$variable_name)
+    filtered_data
+  })
+}
+```
+
+```{r transl_shiny, include = TRUE}
+# Run the Shiny app (runApp needs to be adjusted if already defined)
+shinyApp(ui = ui_shiny_app, server = server_shiny_app)
+```
