@@ -999,6 +999,8 @@ categorize_pdf <- function(merged_df, year) {
   categorized_df <- treat_xx_variables(categorized_df)
   }
   
+  categorized_df$category <- as.numeric(categorized_df$category)
+  
   # Output : 
   return(categorized_df)
 }
