@@ -1085,4 +1085,4 @@ find_years <- function(data, variable_name) {
 
 # V. MAIN SCRIPT ---------------------------------------------------------------
 metadata <- wide_metadata(1998, 2004, 2010, 2014, 2017)
-write.csv(test, "D:/WIDE/Harmonization/metadata.csv", row.names = FALSE)
+write.csv(metadata, "D:/WIDE/Harmonization/metadata.csv", row.names = FALSE)
