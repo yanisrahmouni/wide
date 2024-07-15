@@ -8,9 +8,12 @@
 # I. PACKAGES ------------------------------------------------------------------
 if(!require("utils")) install.packages("utils", dependencies=TRUE)
 if(!require("tools")) install.packages("tools", dependencies=TRUE)
+if(!require("zip")) install.packages("zip", dependencies=TRUE)
+
+Sys.setenv(LANG = "en")
 
 # Define the function
-make_path <- function(main_folder) {
+make_path <- function(main_folder, meth_2010 = "2010") {
   # Dictionary mapping numbers to years
   number_to_year <- list(
     "0124" = "1986",
@@ -31,7 +34,6 @@ make_path <- function(main_folder) {
   for (zip_file in zip_files) {
     # Extract the number from the file name
     file_name <- basename(zip_file)
-    file_name <- iconv(file_name, from = "UTF-8", to = "ASCII//TRANSLIT")
     file_number <- sub("lil-(\\d+).*", "\\1", file_name)
     
     # Check if the number is in the dictionary
@@ -49,39 +51,40 @@ make_path <- function(main_folder) {
       file.rename(zip_file, file.path(year_folder, file_name))
       
       # Unzip the file in the year folder
-      unzip(file.path(year_folder, file_name), exdir = year_folder)
+      zip::unzip(file.path(year_folder, file_name), overwrite = TRUE, exdir = year_folder)
       
-      # Determine the type of file (.csv or .dta)
-      if (grepl("\\.csv\\.zip$", file_name)) {
-        subfolder <- "Csv"
-      } else if (grepl("\\.dta\\.zip$", file_name)) {
-        subfolder <- "Dta"
-      } else {
-        next  # Skip if the file type is unknown
-      }
-      
-      # Define paths for Doc and subfolder
-      doc_folder <- file.path(year_folder, "Doc")
-      data_folder <- file.path(year_folder, subfolder)
-      
-      # Create subfolders if they don't exist
-      if (!dir.exists(doc_folder)) {
-        dir.create(doc_folder)
-      }
-      if (!dir.exists(data_folder)) {
-        dir.create(data_folder)
-      }
-      
-      # Move contents to the appropriate subfolders
-      extracted_files <- list.files(year_folder, full.names = TRUE)
-      for (extracted_file in extracted_files) {
-        if (basename(extracted_file) == "Doc") {
-          # Move Doc contents
-          file.copy(list.files(extracted_file, full.names = TRUE), doc_folder, overwrite = TRUE)
-          unlink(extracted_file, recursive = TRUE)
-        } else if (grepl(paste0("\\.", tolower(subfolder), "$"), extracted_file)) {
-          # Move Csv or Dta contents
-          file.rename(extracted_file, file.path(data_folder, basename(extracted_file)))
+      # Special handling for the year 2010
+      if (year == "2010") {
+        stata_folder <- file.path(year_folder, "Stata")
+        R_folder <- file.path(year_folder, "Csv")
+        meth_2004_folder_stata <- file.path(stata_folder, "Methodologie04")
+        meth_2010_folder_stata <- file.path(stata_folder, "Methodologie10")
+        meth_2004_folder_R <- file.path(R_folder, "Methodologie04")
+        meth_2010_folder_R <- file.path(R_folder, "Methodologie10")
+        
+        # Function to move contents and remove the folder
+        move_contents_and_remove <- function(source_folder, target_folder) {
+          files <- list.files(source_folder, full.names = TRUE)
+          file.rename(files, file.path(target_folder, basename(files)))
+          unlink(source_folder, recursive = TRUE)
+        }
+        
+        # Move the contents and remove the folder accordingly for Stata
+        if (meth_2010 == "2004" && dir.exists(meth_2010_folder_stata)) {
+          move_contents_and_remove(meth_2010_folder_stata, stata_folder)
+          move_contents_and_remove(meth_2004_folder_stata, stata_folder)
+        } else if (meth_2010 == "2010" && dir.exists(meth_2004_folder_stata)) {
+          move_contents_and_remove(meth_2004_folder_stata, stata_folder)
+          move_contents_and_remove(meth_2010_folder_stata, stata_folder)
+        }
+        
+        # Move the contents and remove the folder accordingly for R
+        if (meth_2010 == "2004" && dir.exists(meth_2010_folder_R)) {
+          move_contents_and_remove(meth_2010_folder_R, R_folder)
+          move_contents_and_remove(meth_2004_folder_R, R_folder)
+        } else if (meth_2010 == "2010" && dir.exists(meth_2004_folder_R)) {
+          move_contents_and_remove(meth_2004_folder_R, R_folder)
+          move_contents_and_remove(meth_2010_folder_R, R_folder)
         }
       }
     }
@@ -90,7 +93,6 @@ make_path <- function(main_folder) {
 
 # Example usage
 # Make sure to replace 'your/main/folder/path' with the actual path to your main folder
-# make_path("your/main/folder/path")
-
+# make_path("your/main/folder/path", meth_2010 = "2004")
 
 test <- make_path("D:/Archive WIDE-R - Inutilisé/Archive données/Quetelet/quetelet_archive")
