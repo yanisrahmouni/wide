@@ -49,7 +49,8 @@ font_char <- list(
   wave_2004 = c(name = "Arial-BoldMT", size = "10.98"),
   wave_2010 = c(name = "Helvetica-Bold", size = "11.9999952"),
   wave_2014 = c(name = "Helvetica-Bold", size = "11.9999952"),
-  wave_2017 = c(name = "BAAAAA+Arial-BoldMT", size = "12")
+  wave_2017 = c(name = "BAAAAA+Arial-BoldMT", size = "12"), 
+  wave_2020 = c(name = "Arial-BoldMT", size = "12.00")
 )
 
 # [5] Defining the font characteristics of descriptions for each .pdf file. 
