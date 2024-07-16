@@ -50,7 +50,8 @@ font_char <- list(
   wave_2010 = c(name = "Helvetica-Bold", size = "11.9999952"),
   wave_2014 = c(name = "Helvetica-Bold", size = "11.9999952"),
   wave_2017 = c(name = "BAAAAA+Arial-BoldMT", size = "12"), 
-  wave_2020 = c(name = "Arial-BoldMT", size = "12.00")
+  wave_2020a = c(name = "Arial-BoldMT", size = "12.00"),
+  wave_2020b = c(name = "ArialMT", size = "9.75")
 )
 
 # [5] Defining the font characteristics of descriptions for each .pdf file. 
@@ -59,7 +60,8 @@ font_char_desc <- list(
   wave_2004 = c(name = "ArialMT", size = "10.02"),
   wave_2010 = c(name = "Helvetica-Bold", size = "9.959996016"),
   wave_2014 = c(name = "Helvetica-Bold", size = "9.959996016"),
-  wave_2017 = c(name = "BAAAAA+Arial-BoldMT", size = "10")
+  wave_2017 = c(name = "BAAAAA+Arial-BoldMT", size = "10"),
+  wave_2020 = c(name = "Arial-BoldMT", size = "9.75")
 )
 
 # [6] Defining the regex patterns to search for variable names for each .pdf file.
@@ -68,7 +70,8 @@ patterns <- list(
   wave_2004 = "^[A-Z][-A-Z0-9_]*[A-Z0-9]*\\*?$",
   wave_2010 = "^[A-Z][-A-Z0-9_]*(?:[A-Z0-9]*x+)?\\*?$",
   wave_2014 = "^[A-Z][-A-Z0-9_]*[A-Z0-9]*\\*?$",
-  wave_2017 = "^[A-Z][-A-Z0-9_]*[A-Z0-9]*\\*?$"
+  wave_2017 = "^[A-Z][-A-Z0-9_]*[A-Z0-9]*\\*?$",
+  wave_2020 = "^[A-Z][-A-Z0-9_]*[A-Z0-9]*\\*?$"
 )
 
 # [6] Defining y-coordinates to delete unnecessary information below them. 
@@ -77,7 +80,8 @@ y_footnotes <- list(
   wave_2004 = 790,
   wave_2010 = 780,
   wave_2014 = 800,
-  wave_2017 = 770
+  wave_2017 = 770,
+  wave_2020 = 770
 )
 
 # [7] Defining x-coordinates range for category placement. 
@@ -86,7 +90,8 @@ x_categories <- list(
   wave_2004 = c(lower = 80, upper = 130),
   wave_2010 = c(lower = 60, upper = 120),
   wave_2014 = c(lower = 60, upper = 120),
-  wave_2017 = c(lower = 55, upper = 125)
+  wave_2017 = c(lower = 55, upper = 125),
+  wave_2020 = c(lower = 55, upper = 100)
 )
 
 # [8 - YEAR-SPECIFIC] Defining the x-coordinate threshold to erase "Variable calculée"
