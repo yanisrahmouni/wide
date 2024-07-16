@@ -39,7 +39,8 @@ page_limits <- list(
   wave_2004 = c(begin = 29, end = 233), 
   wave_2010 = c(begin = 29, end = 277), 
   wave_2014 = c(begin = 39, end = 318),
-  wave_2017 = c(begin = 45, end = 349)  
+  wave_2017 = c(begin = 45, end = 349),
+  wave_2020 = c(begin = 45, end = 365)
 )
 
 # [4] Defining the font characteristics of variable names for each .pdf file.
