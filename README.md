@@ -50,12 +50,12 @@ This GitHub repository has three main objectives:
   options for their own analyses.
 
 - **Harmonization tools:** The repository also includes a set of tools
-  designed to help haronize survey data across different years. When
+  designed to help harmonize survey data across different years. When
   pooled together, users may encounter discrepancies such as different
   variable names for the same information, variations in categories due
   to changes in survey design, or shifts in categories reflecting
   societal changes in France (e.g., degree reforms). This repository
-  serves as a plce to document these changes and, ultimatley, offers
+  serves as a place to document these changes and, ultimately, offers
   strategies to address and resolve these discrepancies for consistent
   analysis.
 
