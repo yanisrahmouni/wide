@@ -75,11 +75,32 @@ i.e., all files should have a zip format. An R script is provided to
 unzip those files and organize the data appropriately, allowing you to
 run the remaining R scripts available on the platform.
 
+Below is a detailed guide to the organization of the repository:
+
+    .
+    ├── scripts/                     # R scripts for various tasks
+    │   ├── main/                    # Core scripts for data manipulation and preprocessing
+    │   ├── harmonization/           # Scripts to harmonize survey data across different years
+    │   ├── context/                 # Scripts to provide context for international researchers
+    │
+    ├── shiny-apps/                  # Shiny applications for interactive data exploration
+    │   ├── data-translation/        # App for metadata translation and contextual understanding
+    │   ├── harmonization/           # App to explore and resolve data discrepancies
+    │
+    ├── projects/                    # Project-specific research scripts
+    │   ├── children-wealth/         # Research on children's wealth
+    │   ├── gender-inequality/       # Research on wealth inequality between genders
+    │
+    ├── docs/                        # Documentation and additional resources
+    │   ├── slides/                  # Presentation slides for project overviews and results
+    │
+    ├── README.md                    # Overview of the repository and usage instructions
+
 ## Contributing
 
 To contribute, users with access to the *Patrimoine* survey data who
 wish to participate in the shared codes and methodologies can contact
-Marion Leturcq at the following address: <Marion.leturcq@ined.fr>.
+Marion Leturcq at the following address: <marion.leturcq@ined.fr>.
 Additionally, to request the inclusion of a specific variable in the
 harmonization process, a dedicated flag has been set up in the “Issues”
 section within the “scripts” folder.
