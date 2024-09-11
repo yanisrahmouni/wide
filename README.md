@@ -64,7 +64,7 @@ This GitHub repository has three main objectives:
   explanations of the French educational, financial, and institutional
   context, helping users accurately interpret the data.
 
-For confidentiality purposes, the oriignal data is not included in this
+For confidentiality purposes, the original data is not included in this
 GitHub repository. The data can be downloaded via
 [Progedo](https://data.progedo.fr/studies/doi/10.13144/lil-1625) in a
 limited version, where certain confidential variables are unavailable.
