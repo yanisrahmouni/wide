@@ -16,7 +16,7 @@ packages <- c("pdftools", "dplyr", "tidyverse", "stringr", "data.table", "tidyte
 invisible(lapply(packages, library, character.only = TRUE))
 
 # II. SETTINGS -----------------------------------------------------------------
-setwd("D:/WIDE-R/inputs/raw") # TO EDIT 
+setwd("C:/Users/rahmouni_yan/Desktop/inputs/raw") # TO EDIT 
 Sys.setenv(LANG = "en")
 
 # III. CONSTANTS ---------------------------------------------------------------
