@@ -1012,6 +1012,12 @@ categorize_pdf <- function(merged_df, year) {
   return(categorized_df)
 }
 
+
+# [6] Defining -wide_harmonize()-, a function using a hand-made .csv file called
+# "harmonized_variables" to assign a cross-year variable identifier for variables
+# containing the same information but who may have different metadata.
+harmonized_variables <- read.csv("C:/Users/rahmouni_yan/Desktop/wide/scripts/1_harmonization/harmonized_variables.csv")
+
 # [7] Defining -wide_metadata()-, a function embedding all the other to create 
 # the final dataset, combined_categorized_df. 
 wide_metadata <- function(...) {
