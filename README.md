@@ -104,3 +104,13 @@ Marion Leturcq at the following address: <marion.leturcq@ined.fr>.
 Additionally, to request the inclusion of a specific variable in the
 harmonization process, a dedicated flag has been set up in the “Issues”
 section within the “scripts” folder.
+
+## Acknowledgements
+
+This project has been made possible through the support of several
+institutions. We would like to thank the **Institut National d’Etudes
+Démographiques (INED)**, where our team is based, for fostering an
+environment that supports our research activities. We also extend our
+thanks to the **Agence Nationale de la Recherche (ANR)** for their
+valuable funding, which has been instrumental in the successful
+realization of the project.
