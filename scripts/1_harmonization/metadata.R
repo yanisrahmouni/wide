@@ -1017,6 +1017,33 @@ categorize_pdf <- function(merged_df, year) {
 # "harmonized_variables" to assign a cross-year variable identifier for variables
 # containing the same information but who may have different metadata.
 harmonized_variables <- read.csv("C:/Users/rahmouni_yan/Desktop/wide/scripts/1_harmonization/harmonized_variables.csv")
+colnames(harmonized_variables) <- gsub("^X", "", colnames(harmonized_variables))
+
+wide_harmonize <- function(df, harmonized_variables) {
+  df$harmonize_name <- NA
+  
+  for (i in 1:nrow(df)) {
+    current_variable <- df$first_id[i]
+    current_year <- df$year[i]
+    
+    year_column <- as.character(current_year)
+    print(current_variable)
+    print(current_year)
+    if (year_column %in% colnames(harmonized_variables)) {
+      year_variables <- as.character(harmonized_variables[[year_column]])
+      match_index <- which(year_variables == current_variable)
+      
+      if (length(match_index) > 0) {
+        df$harmonize_name[i] <- harmonized_variables$Harmonized_name[match_index]
+      }
+    }
+  }
+  
+  df$harmonize_name[!is.na(df$harmonize_name)] <- paste0(df$harmonize_name[!is.na(df$harmonize_name)], "_WIDE")
+  
+  # Output :
+  return(df)
+}
 
 # [7] Defining -wide_metadata()-, a function embedding all the other to create 
 # the final dataset, combined_categorized_df. 
@@ -1049,6 +1076,7 @@ wide_metadata <- function(...) {
   
   combined_categorized_df <- do.call(rbind, categorized_dfs)
   rownames(combined_categorized_df) <- NULL
+  combined_categorized_df <- wide_harmonize(combined_categorized_df, harmonized_variables)
   
   # Final output: 
   return(combined_categorized_df)
