@@ -1,156 +1,193 @@
-Harmonized_name,1986,1992,1998,2004,2010,2014,2017,Topic
-NPIECES,N/A,N/A,N/A,N/A,NPIECES,NPIECES,NPIECES,Housing
-SURFACE,N/A,LOG105,LOGSUR,RESSUR,SURFACE,SURFACE,SURFACE,Housing
-SURFTR,N/A,N/A,N/A,N/A,SURFTR,SURFTR,SURFTR,Housing
-RESTYP,IM2,LOG103,LOGTYP,RESTYP,RESTYP,RESTYP,RESTYP,Housing
-RESHLM,IM4,LOG102,LOGTYP2,RESHLM,RESHLM,RESHLM,RESHLM,Housing
-RESAGE,N/A,N/A,LOGAGE,RESAGE,RESAGE,RESAGE,RESAGE,Housing
-EMMENAG,IM1,LOG101,LOGAN,N/A,EMMENAG,EMMENAG,EMMENAG,Housing
-STOC,IM4,LOG102,LOG102,LOGOC,STOC,STOC,STOC,Housing
-STOCP,N/A,N/A,RESTIE,RESTIER,STOCP,STOCP,STOCP,Housing
-LES,N/A,N/A,N/A,N/A,LES,LES,LES,Housing
-PROPRI,N/A,N/A,N/A,N/A,PROPRI,PROPRI,PROPRI,Housing
-STOCPRO,N/A,N/A,N/A,N/A,STOCPRO,STOCPRO,STOCPRO,Housing
-STOCPP,N/A,N/A,N/A,N/A,N/A,STOCPP,STOCPP,Housing
-GMTSTOC,N/A,N/A,N/A,N/A,N/A,GMTSTOC,GMTSTOC,Housing
-LOYER,N/A,N/A,LOYER,N/A,LOYER,LOYER,LOYER,Housing
-RESACCES,N/A,N/A,N/A,N/A,RESACCES,RESACCES,RESACCES,Housing
-RESACH,IM11,LOG209,RESACH,RESACH,N/A,RESACH,RESACH,Housing
-RESAN,IM12,LOG210,RESAN,N/A,RESAN,RESAN,RESAN,Housing
-RESAPO,IM20,LOG213,RESAPO,N/A,RESAPO,RESAPO,RESAPO,Housing
-RESORAPO,IM26,"LOG202, LOG203x",N/A,N/A,N/A,RESORAPO,RESORAPO,Housing
-RESPRIACH,N/A,N/A,N/A,N/A,N/A,RESPRIACH,RESPRIACH,Housing
-MONTMIN_CORR,IM10,LOG107,RESMIN,MONTMIN,MONTMIN_CORR,MONTMIN_CORR,MONTMIN_CORR,Housing
-MONTMAX_CORR,IM10,LOG108,RESMAX,MONTMAX,MONTMAX_CORR,MONTMAX_CORR,MONTMAX_CORR,Housing
-PARPR,N/A,N/A,RESPR,PARPR,PARPR,PARPR,PARPR,Housing
-PARCJ,N/A,N/A,RESCJ,PARCJ,PARCJ,PARCJ,PARCJ,Housing
-PARAUT,N/A,N/A,RESAUT,PARAUT,PARAUT,PARAUT,PARAUT,Housing
-PARHM,N/A,N/A,RESHM,PARHM,PARHM,PARHM,PARHM,Housing
-DETNAT,N/A,N/A,N/A,N/A,DETNAT,DETNAT,DETNAT,Housing
-ETABA14,N/A,N/A,QUI4,ETABDET,ETABA,ETABA14,ETABA14,Housing
-COUTAN,N/A,N/A,REMBx,COUTAN,COUTAN,COUTAN,COUTAN,Housing
-MONTCLA_CORR,N/A,N/A,MI,MONTCLA_CORR,MONTCLA_CORR,MONTCLA_CORR,MONTCLA_CORR,Housing
-KDU,N/A,N/A,KDU,KDU,KDU,KDU,KDU,Housing
-ANNEE,N/A,N/A,"DATEA, DATEM",ANNEE,ANNEE,ANNEE,ANNEE,Housing
-DETMOD,N/A,N/A,RENEGO,N/A,DETMOD,DETMOD,DETMOD,Housing
-DETMODA,N/A,N/A,N/A,N/A,DETMODA,DETMODA,DETMODA,Housing
-DUREMP,N/A,N/A,DUREA,DUREMP,DUREMP,DUREMP,DUREMP,Housing
-DETTXNA,N/A,N/A,TAUXFIX,N/A,DETTXNA,DETTXNA,DETTXNA,Housing
-DETTX,N/A,N/A,TAUX,DETTX,DETTX,DETTX,DETTX,Housing
-DETGAR,N/A,N/A,N/A,N/A,DETGAR,DETGAR,DETGAR,Housing
-DETGARIM,N/A,N/A,N/A,N/A,N/A,DETGARIM,DETGARIM,Housing
-GDETREMRP_E,N/A,N/A,N/A,N/A,GDETREMRP_E,GDETREMRP_E,GDETREMRP_E,Housing
-RETARDRP,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Housing
-LOGAL,N/A,N/A,LOGAL,N/A,N/A,N/A,N/A,Housing
-LOGALCO,N/A,N/A,LOGALCO,N/A,N/A,N/A,N/A,Housing
-LOGALMT,N/A,N/A,LOGALMT,N/A,N/A,N/A,N/A,Housing
-LOGAR,N/A,LOG114,LOGAR,N/A,N/A,N/A,N/A,Housing
-LOGARMIN,N/A,N/A,LOGARMIN,N/A,N/A,N/A,N/A,Housing
-LOGARMAX,N/A,N/A,LOGARMAX,N/A,N/A,N/A,N/A,Housing
-LOGUT,N/A,N/A,LOGUT,N/A,N/A,N/A,N/A,Housing
-RESRAC,IM30,LOG216,RESRAC,N/A,N/A,N/A,N/A,Housing
-RESDEP,IM37,LOG219,RESDEP,N/A,N/A,N/A,N/A,Housing
-RESDEP1x,"IM38, IM39, IM40, IM41, IM42, IM43","LOG220a, LOG220b, LOG220c, LOG220d, LOG220e, LOG220f",RESDEP1x,N/A,N/A,N/A,N/A,Housing
-"LOG104a, LOG104b",N/A,"LOG104a, LOG104b",N/A,N/A,N/A,N/A,N/A,Housing
-"LOG106a, LOG106b, LOG106c, LOG106d, LOG106e",N/A,"LOG106a, LOG106b, LOG106c, LOG106d, LOG106e",N/A,N/A,N/A,N/A,N/A,Housing
-LOG109,N/A,LOG109,N/A,N/A,N/A,N/A,N/A,Housing
-LOG110,N/A,LOG110,N/A,N/A,N/A,N/A,N/A,Housing
-LOG111,N/A,LOG111,N/A,N/A,N/A,N/A,N/A,Housing
-JEACTIF,N/A,"Ax11, Ax201, Ax31, Ax41",N/A,JEACTIF,JEACTIF,JEACTIF,JEACTIF,Professional background
-JAGEACT,N/A,N/A,N/A,JAGEACT,JAGEACT,JAGEACT,JAGEACT,Professional background
-CYDEBx,"act15, act16, act29","Ay204, Ay38, Ay68",DEBACTx,CYDEBx,CYDEBx,CYDEBx,CYDEBx,Professional background
-CYACTx,"ACT1, ACT2, ACT3, ACT4, ACT5, ACT6","Ay12, Ay202, Ay34, Ay44",STATACTx,CYACTx,CYACTx,CYACTx,CYACTx,Professional background
-CYCAUSx,N/A,"Ax52a, Ax52b, Ax52c, Ax52d",CAUSACTx,CYCAUSx,CYCAUSx,CYCAUSx,CYCAUSx,Professional background
-CYTPTOx,N/A,N/A,CYAR42,CYTPTOx,CYTPTOx,CYTPTOx,CYTPTOx,Professional background
-DUREE,"ACT47, ACT48",Ax65,N/A,DUREE,DUREE,DUREE,DUREE,Professional background
-CYDER,N/A,Ay68,"CYAR3A, CYAR3B",CYDER,CYDER,CYDER,CYDER,Professional background
-DURCHO,N/A,N/A,N/A,DURCHO,DURCHO,DURCHO,DURCHO,Professional background
-TROUV,N/A,N/A,N/A,N/A,N/A,N/A,TROUV,Professional background
-PERD,N/A,N/A,N/A,N/A,N/A,N/A,PERD,Professional background
-RETRAI,N/A,N/A,N/A,N/A,N/A,N/A,RETRAI,Professional background
-CYSUBJ,N/A,N/A,CYAR5,CYSUBJ,CYSUBJ,CYSUBJ,N/A,Professional background
-CJVEUF,N/A,N/A,N/A,AVERTCJ,CJVEUF,CJVEUF,N/A,Professional background
-CJACTx,N/A,N/A,N/A,CJACTx,CJACTx,CJACTx,N/A,Professional background
-CJACTz,N/A,N/A,N/A,N/A,CJACTz,CJACTz,N/A,Professional background
-CJDEBz,N/A,N/A,N/A,N/A,CJDEBz,CJDEBz,N/A,Professional background
-CJFINz,N/A,N/A,N/A,N/A,CJFINz,CJFINz,N/A,Professional background
-AUTRACx,N/A,N/A,AUTRACx,N/A,N/A,N/A,N/A,Professional background
-CYAR2,N/A,"Ay63, Ay64, Ay61",CYAR2,N/A,N/A,N/A,N/A,Professional background
-CYAR4,N/A,N/A,CYAR4,N/A,N/A,N/A,N/A,Professional background
-CYAR41,N/A,Ay66,CYAR41,N/A,N/A,N/A,N/A,Professional background
-Ax13,"ACT9, ACT10",Ax13,N/A,N/A,N/A,N/A,N/A,Professional background
-Ax14,"ACT11, ACT12",Ax14,N/A,N/A,N/A,N/A,N/A,Professional background
-Ax15,"ACT13, ACT14",Ax15,N/A,N/A,N/A,N/A,N/A,Professional background
-Ax16,N/A,Ax16,N/A,N/A,N/A,N/A,N/A,Professional background
-Ax203,N/A,Ax203,N/A,N/A,N/A,N/A,N/A,Professional background
-Ax205,N/A,Ax205,N/A,N/A,N/A,N/A,N/A,Professional background
-Ax206,"ACT17, ACT18",Ax206,N/A,N/A,N/A,N/A,N/A,Professional background
-Ax208a,"ACT19, ACT23, ACT21, ACT25",Ax208a,N/A,N/A,N/A,N/A,N/A,Professional background
-Ax208b,"ACT19, ACT23, ACT21, ACT25",Ax208b,N/A,N/A,N/A,N/A,N/A,Professional background
-Ax208c,N/A,Ax208c,N/A,N/A,N/A,N/A,N/A,Professional background
-Ax208d,N/A,Ax208d,N/A,N/A,N/A,N/A,N/A,Professional background
-"Ax207a, Ax207b, Ax207c, Ax207d, Ax207e, Ax207f, Ax207g, Ax207h",N/A,"Ax207a, Ax207b, Ax207c, Ax207d, Ax207e, Ax207f, Ax207g, Ax207h",N/A,N/A,N/A,N/A,N/A,Professional background
-"Ax208a, Ax208b, Ax208c, Ax208d","ACT19, ACT20, ACT23, ACT24, ACT21, ACT22, ACT25, ACT26","Ax208a, Ax208b, Ax208c, Ax208d",N/A,N/A,N/A,N/A,N/A,Professional background
-Ax209,N/A,Ax209,N/A,N/A,N/A,N/A,N/A,Professional background
-Ax210a,N/A,Ax210a,N/A,N/A,N/A,N/A,N/A,Professional background
-Ax211,N/A,Ax211,N/A,N/A,N/A,N/A,N/A,Professional background
-Ax32,"ACT7, ACT8",Ax32,N/A,N/A,N/A,N/A,N/A,Professional background
-Ax33,N/A,Ax33,N/A,N/A,N/A,N/A,N/A,Professional background
-Ax35,N/A,Ax35,N/A,N/A,N/A,N/A,N/A,Professional background
-Ax36,"ACT31, ACT32",Ax36,N/A,N/A,N/A,N/A,N/A,Professional background
-Ax37,"ACT33, ACT34",Ax37,N/A,N/A,N/A,N/A,N/A,Professional background
-Ax41,N/A,Ax41,N/A,N/A,N/A,N/A,N/A,Professional background
-Ax42,N/A,Ax42,N/A,N/A,N/A,N/A,N/A,Professional background
-Ax45,N/A,Ax45,N/A,N/A,N/A,N/A,N/A,Professional background
-"Ax46a, Ax46b",N/A,"Ax46a, Ax46b",N/A,N/A,N/A,N/A,N/A,Professional background
-Ax47,N/A,Ax47,N/A,N/A,N/A,N/A,N/A,Professional background
-Ax51,N/A,Ax51,N/A,N/A,N/A,N/A,N/A,Professional background
-Ax67,N/A,Ax67,N/A,N/A,N/A,N/A,N/A,Professional background
-Ax701,N/A,Ax701,N/A,N/A,N/A,N/A,N/A,Professional background
-"Ax702a, Ax702b",N/A,"Ax702a, Ax702b",N/A,N/A,N/A,N/A,N/A,Professional background
-Ax703,"RETP1, RETC1",Ax703,N/A,N/A,N/A,N/A,N/A,Professional background
-Ax704,N/A,Ax704,N/A,N/A,N/A,N/A,N/A,Professional background
-Ax705,"RETP4, RETC4",Ax705,N/A,N/A,N/A,N/A,N/A,Professional background
-Ax706,"RETP5, RETC5",Ax706,N/A,N/A,N/A,N/A,N/A,Professional background
-Ax707i,"RETP7, RETC7",Ax707i,N/A,N/A,N/A,N/A,N/A,Professional background
-Ax708,N/A,Ax708,N/A,N/A,N/A,N/A,N/A,Professional background
-Ax709,N/A,Ax709,N/A,N/A,N/A,N/A,N/A,Professional background
-Ax710,N/A,Ax710,N/A,N/A,N/A,N/A,N/A,Professional background
-Ax711,N/A,Ax711,N/A,N/A,N/A,N/A,N/A,Professional background
-Ax712,N/A,Ax712,N/A,N/A,N/A,N/A,N/A,Professional background
-Ax713,N/A,Ax713,N/A,N/A,N/A,N/A,N/A,Professional background
-Ax714,N/A,Ax714,N/A,N/A,N/A,N/A,N/A,Professional background
-JEFRSO,"DI7, DI8, DI9, DI10","JER03, JEC03, JER04, JEC04","JE81, JE82",JEFRSO,JEFRSO,JEFRSO,JEFRSO,Youth
-"JEAINEM, JEAINEF",N/A,N/A,N/A,N/A,N/A,"JEAINEM, JEAINEF","JEAINEM, JEAINEF",Youth
-JEAINE,"DI11, DI12","JER05, JEC05",N/A,JEAINE,JEAINE,JEAINE,JEAINE,Youth
-JEARGT,"ENP5, ENC5","JER20, JEC20",JE6,JEARGT,JEARGT,JEARGT,JEARGT,Youth
-JEGRAVE,N/A,"JER21a, JEC21a",N/A,JEGRAVE,JEGRAVE,JEGRAVE,JEGRAVE,Youth
-JEGRAVE_DIV,N/A,"JER21a, JEC21a",N/A,JEGRAVE1,JEGRAVE1,JEGRAVE1,JEGRAVE_DIV,Youth
-JEGRAVE_MALP,N/A,"JER21b, JEC21b",N/A,JEGRAVE2,JEGRAVE2,JEGRAVE2,JEGRAVE_MALP,Youth
-JEGRAVE_MALM,N/A,"JER21c, JEC21c",N/A,JEGRAVE3,JEGRAVE3,JEGRAVE3,JEGRAVE_MALM,Youth
-JEGRAVE_MALFS,N/A,N/A,N/A,N/A,N/A,N/A,JEGRAVE_MALFS,Youth
-JEGRAVE_DISP,N/A,"JER21d, JEC21d",N/A,JEGRAVE4,JEGRAVE4,JEGRAVE4,JEGRAVE_DISP,Youth
-JEGRAVE_DCAS,N/A,"JER21d, JEC21d",N/A,JEGRAVE5,JEGRAVE5,JEGRAVE5,JEGRAVE_DCAS,Youth
-JEGRAVE_DCFS,N/A,N/A,N/A,JEGRAVE6,JEGRAVE6,JEGRAVE6,JEGRAVE_DCFS,Youth
-JEGRAVE_AUT,N/A,"JER21e, JEC21e",N/A,JEGRAVE7,JEGRAVE7,JEGRAVE7,JEGRAVE_AUT,Youth
-JEQUIT,N/A,"JER22, JEC22",N/A,JEQUIT,JEQUIT,JEQUIT,JEQUIT,Youth
-JAGEQUIT,N/A,N/A,N/A,JAGEQUIT,JAGEQUIT,JAGEQUIT,JAGEQUIT,Youth
-JEETUD,"DI3, DI4",JEy01,JE1,JEETUD,ANFINETU,DATEFORA,DATEFORA,Youth
-JAGETUD,N/A,N/A,N/A,JAGETUD,AGFINETU,AGFOR,AGFOR,Youth
-JE2,"ENP2, ENC2","JER07, JEC07",JE2,N/A,N/A,N/A,N/A,Youth
-JE3,"ENP3, ENC3","JER11, JEC11",JE3,N/A,N/A,N/A,N/A,Youth
-JE4,"ENP4, ENC4","JER12, JEC12",JE4,N/A,N/A,N/A,N/A,Youth
-"JE52,"ENP6, ENC6","JER16, JEC16",JE52,N/A,N/A,N/A,N/A,Youth
-JE53,"ENP8, ENC8","JER17, JEC17",JE53,N/A,N/A,N/A,N/A,Youth
-JE54,N/A,N/A,JE54,N/A,N/A,N/A,N/A,Youth
-JE55,N/A,N/A,JE55,N/A,N/A,N/A,N/A,Youth
-JE51,"ENP7, ENC7","JER18, JEC18",JE51,N/A,N/A,N/A,N/A,Youth
-JE511,N/A,"JER19, JEC19",JE511,N/A,N/A,N/A,N/A,Youth
-"JER02,JEC02","DI5, DI6","JER02, JEC02",N/A,N/A,N/A,N/A,N/A,Youth
-"JER06,JEC06","ENP1, ENC1","JER06, JEC06",N/A,N/A,N/A,N/A,N/A,Youth
-"JER09,JEC09",N/A,"JER09, JEC09",N/A,N/A,N/A,N/A,N/A,Youth
-"JER09,JEC09",N/A,"JER09, JEC09",N/A,N/A,N/A,N/A,N/A,Youth
-"JER10,JEC10",N/A,"JER10, JEC10",N/A,N/A,N/A,N/A,N/A,Youth
-"JER13,JEC13",N/A,"JER13, JEC13",N/A,N/A,N/A,N/A,N/A,Youth
-"JER14,JEC14",N/A,"JER14, JEC14",N/A,N/A,N/A,N/A,N/A,Youth
-"JER15,JEC15",N/A,"JER15, JEC15",N/A,N/A,N/A,N/A,N/A,Youth
+"Harmonized_name","1986","1992","1998","2004","2010","2014","2017","2020","Topic","Notes"
+"NPIECES","N/A","N/A","N/A","N/A","NPIECES","NPIECES","NPIECES","To be filled","Housing",NA
+"SURFACE","N/A","LOG105","LOGSUR","RESSUR","SURFACE","SURFACE","SURFACE","To be filled","Housing",NA
+"SURFTR","N/A","N/A","N/A","N/A","SURFTR","SURFTR","SURFTR","To be filled","Housing",NA
+"RESTYP","IM2","LOG103","LOGTYP","RESTYP","RESTYP","RESTYP","RESTYP","To be filled","Housing",NA
+"RESHLM","IM4","LOG102","LOGTYP2","RESHLM","RESHLM","RESHLM","RESHLM","To be filled","Housing",NA
+"RESAGE","N/A","N/A","LOGAGE","RESAGE","RESAGE","RESAGE","RESAGE","To be filled","Housing",NA
+"EMMENAG","IM1","LOG101","LOGAN","N/A","EMMENAG","EMMENAG","EMMENAG","To be filled","Housing",NA
+"STOC","IM4","LOG102","LOG102","LOGOC","STOC","STOC","STOC","To be filled","Housing",NA
+"STOCP","N/A","N/A","RESTIE","RESTIER","STOCP","STOCP","STOCP","To be filled","Housing",NA
+"LES","N/A","N/A","N/A","N/A","LES","LES","LES","To be filled","Housing",NA
+"PROPRI","N/A","N/A","N/A","N/A","PROPRI","PROPRI","PROPRI","To be filled","Housing",NA
+"STOCPRO","N/A","N/A","N/A","N/A","STOCPRO","STOCPRO","STOCPRO","To be filled","Housing",NA
+"STOCPP","N/A","N/A","N/A","N/A","N/A","STOCPP","STOCPP","To be filled","Housing",NA
+"GMTSTOC","N/A","N/A","N/A","N/A","N/A","GMTSTOC","GMTSTOC","To be filled","Housing",NA
+"LOYER","N/A","N/A","LOYER","N/A","LOYER","LOYER","LOYER","To be filled","Housing",NA
+"RESACCES","N/A","N/A","N/A","N/A","RESACCES","RESACCES","RESACCES","To be filled","Housing",NA
+"RESACH","IM11","LOG209","RESACH","RESACH","N/A","RESACH","RESACH","To be filled","Housing",NA
+"RESAN","IM12","LOG210","RESAN","N/A","RESAN","RESAN","RESAN","To be filled","Housing",NA
+"RESAPO","IM20","LOG213","RESAPO","N/A","RESAPO","RESAPO","RESAPO","To be filled","Housing",NA
+"RESORAPO","IM26","LOG202, LOG203x","N/A","N/A","N/A","RESORAPO","RESORAPO","To be filled","Housing",NA
+"RESPRIACH","N/A","N/A","N/A","N/A","N/A","RESPRIACH","RESPRIACH","To be filled","Housing",NA
+"MONTMIN_CORR","IM10","LOG107","RESMIN","MONTMIN","MONTMIN_CORR","MONTMIN_CORR","MONTMIN_CORR","To be filled","Housing",NA
+"MONTMAX_CORR","IM10","LOG108","RESMAX","MONTMAX","MONTMAX_CORR","MONTMAX_CORR","MONTMAX_CORR","To be filled","Housing",NA
+"PARPR","N/A","N/A","RESPR","PARPR","PARPR","PARPR","PARPR","To be filled","Housing",NA
+"PARCJ","N/A","N/A","RESCJ","PARCJ","PARCJ","PARCJ","PARCJ","To be filled","Housing",NA
+"PARAUT","N/A","N/A","RESAUT","PARAUT","PARAUT","PARAUT","PARAUT","To be filled","Housing",NA
+"PARHM","N/A","N/A","RESHM","PARHM","PARHM","PARHM","PARHM","To be filled","Housing",NA
+"DETNAT","N/A","N/A","N/A","N/A","DETNAT","DETNAT","DETNAT","To be filled","Housing",NA
+"ETABA14","N/A","N/A","QUI4","ETABDET","ETABA","ETABA14","ETABA14","To be filled","Housing",NA
+"COUTAN","N/A","N/A","REMBx","COUTAN","COUTAN","COUTAN","COUTAN","To be filled","Housing",NA
+"MONTCLA_CORR","N/A","N/A","MI","MONTCLA_CORR","MONTCLA_CORR","MONTCLA_CORR","MONTCLA_CORR","To be filled","Housing",NA
+"KDU","N/A","N/A","KDU","KDU","KDU","KDU","KDU","To be filled","Housing",NA
+"ANNEE","N/A","N/A","DATEA, DATEM","ANNEE","ANNEE","ANNEE","ANNEE","To be filled","Housing",NA
+"DETMOD","N/A","N/A","RENEGO","N/A","DETMOD","DETMOD","DETMOD","To be filled","Housing",NA
+"DETMODA","N/A","N/A","N/A","N/A","DETMODA","DETMODA","DETMODA","To be filled","Housing",NA
+"DUREMP","N/A","N/A","DUREA","DUREMP","DUREMP","DUREMP","DUREMP","To be filled","Housing",NA
+"DETTXNA","N/A","N/A","TAUXFIX","N/A","DETTXNA","DETTXNA","DETTXNA","To be filled","Housing",NA
+"DETTX","N/A","N/A","TAUX","DETTX","DETTX","DETTX","DETTX","To be filled","Housing",NA
+"DETGAR","N/A","N/A","N/A","N/A","DETGAR","DETGAR","DETGAR","To be filled","Housing",NA
+"DETGARIM","N/A","N/A","N/A","N/A","N/A","DETGARIM","DETGARIM","To be filled","Housing",NA
+"GDETREMRP_E","N/A","N/A","N/A","N/A","GDETREMRP_E","GDETREMRP_E","GDETREMRP_E","To be filled","Housing",NA
+"RETARDRP","N/A","N/A","N/A","N/A","N/A","N/A","N/A","To be filled","Housing",NA
+"LOGAL","N/A","N/A","LOGAL","N/A","N/A","N/A","N/A","To be filled","Housing",NA
+"LOGALCO","N/A","N/A","LOGALCO","N/A","N/A","N/A","N/A","To be filled","Housing",NA
+"LOGALMT","N/A","N/A","LOGALMT","N/A","N/A","N/A","N/A","To be filled","Housing",NA
+"LOGAR","N/A","LOG114","LOGAR","N/A","N/A","N/A","N/A","To be filled","Housing",NA
+"LOGARMIN","N/A","N/A","LOGARMIN","N/A","N/A","N/A","N/A","To be filled","Housing",NA
+"LOGARMAX","N/A","N/A","LOGARMAX","N/A","N/A","N/A","N/A","To be filled","Housing",NA
+"LOGUT","N/A","N/A","LOGUT","N/A","N/A","N/A","N/A","To be filled","Housing",NA
+"RESRAC","IM30","LOG216","RESRAC","N/A","N/A","N/A","N/A","To be filled","Housing",NA
+"RESDEP","IM37","LOG219","RESDEP","N/A","N/A","N/A","N/A","To be filled","Housing",NA
+"RESDEP1x","IM38, IM39, IM40, IM41, IM42, IM43","LOG220a, LOG220b, LOG220c, LOG220d, LOG220e, LOG220f","RESDEP1x","N/A","N/A","N/A","N/A","To be filled","Housing",NA
+"LOG104a, LOG104b","N/A","LOG104a, LOG104b","N/A","N/A","N/A","N/A","N/A","To be filled","Housing",NA
+"LOG106a, LOG106b, LOG106c, LOG106d, LOG106e","N/A","LOG106a, LOG106b, LOG106c, LOG106d, LOG106e","N/A","N/A","N/A","N/A","N/A","To be filled","Housing",NA
+"LOG109","N/A","LOG109","N/A","N/A","N/A","N/A","N/A","To be filled","Housing",NA
+"LOG110","N/A","LOG110","N/A","N/A","N/A","N/A","N/A","To be filled","Housing",NA
+"LOG111","N/A","LOG111","N/A","N/A","N/A","N/A","N/A","To be filled","Housing",NA
+"JEACTIF","N/A","Ax11, Ax201, Ax31, Ax41","N/A","JEACTIF","JEACTIF","JEACTIF","JEACTIF","To be filled","Professional background",NA
+"JAGEACT","N/A","N/A","N/A","JAGEACT","JAGEACT","JAGEACT","JAGEACT","To be filled","Professional background",NA
+"CYDEBx","act15, act16, act29","Ay204, Ay38, Ay68","DEBACTx","CYDEBx","CYDEBx","CYDEBx","CYDEBx","To be filled","Professional background",NA
+"CYACTx","ACT1, ACT2, ACT3, ACT4, ACT5, ACT6","Ay12, Ay202, Ay34, Ay44","STATACTx","CYACTx","CYACTx","CYACTx","CYACTx","To be filled","Professional background",NA
+"CYCAUSx","N/A","Ax52a, Ax52b, Ax52c, Ax52d","CAUSACTx","CYCAUSx","CYCAUSx","CYCAUSx","CYCAUSx","To be filled","Professional background",NA
+"CYTPTOx","N/A","N/A","CYAR42","CYTPTOx","CYTPTOx","CYTPTOx","CYTPTOx","To be filled","Professional background",NA
+"DUREE","ACT47, ACT48","Ax65","N/A","DUREE","DUREE","DUREE","DUREE","To be filled","Professional background",NA
+"CYDER","N/A","Ay68","CYAR3A, CYAR3B","CYDER","CYDER","CYDER","CYDER","To be filled","Professional background",NA
+"DURCHO","N/A","N/A","N/A","DURCHO","DURCHO","DURCHO","DURCHO","To be filled","Professional background",NA
+"TROUV","N/A","N/A","N/A","N/A","N/A","N/A","TROUV","To be filled","Professional background",NA
+"PERD","N/A","N/A","N/A","N/A","N/A","N/A","PERD","To be filled","Professional background",NA
+"RETRAI","N/A","N/A","N/A","N/A","N/A","N/A","RETRAI","To be filled","Professional background",NA
+"CYSUBJ","N/A","N/A","CYAR5","CYSUBJ","CYSUBJ","CYSUBJ","N/A","To be filled","Professional background",NA
+"CJVEUF","N/A","N/A","N/A","AVERTCJ","CJVEUF","CJVEUF","N/A","To be filled","Professional background",NA
+"CJACTx","N/A","N/A","N/A","CJACTx","CJACTx","CJACTx","N/A","To be filled","Professional background",NA
+"CJACTz","N/A","N/A","N/A","N/A","CJACTz","CJACTz","N/A","To be filled","Professional background",NA
+"CJDEBz","N/A","N/A","N/A","N/A","CJDEBz","CJDEBz","N/A","To be filled","Professional background",NA
+"CJFINz","N/A","N/A","N/A","N/A","CJFINz","CJFINz","N/A","To be filled","Professional background",NA
+"AUTRACx","N/A","N/A","AUTRACx","N/A","N/A","N/A","N/A","To be filled","Professional background",NA
+"CYAR2","N/A","Ay63, Ay64, Ay61","CYAR2","N/A","N/A","N/A","N/A","To be filled","Professional background",NA
+"CYAR4","N/A","N/A","CYAR4","N/A","N/A","N/A","N/A","To be filled","Professional background",NA
+"CYAR41","N/A","Ay66","CYAR41","N/A","N/A","N/A","N/A","To be filled","Professional background",NA
+"Ax13","ACT9, ACT10","Ax13","N/A","N/A","N/A","N/A","N/A","To be filled","Professional background",NA
+"Ax14","ACT11, ACT12","Ax14","N/A","N/A","N/A","N/A","N/A","To be filled","Professional background",NA
+"Ax15","ACT13, ACT14","Ax15","N/A","N/A","N/A","N/A","N/A","To be filled","Professional background",NA
+"Ax16","N/A","Ax16","N/A","N/A","N/A","N/A","N/A","To be filled","Professional background",NA
+"Ax203","N/A","Ax203","N/A","N/A","N/A","N/A","N/A","To be filled","Professional background",NA
+"Ax205","N/A","Ax205","N/A","N/A","N/A","N/A","N/A","To be filled","Professional background",NA
+"Ax206","ACT17, ACT18","Ax206","N/A","N/A","N/A","N/A","N/A","To be filled","Professional background",NA
+"Ax208a","ACT19, ACT23, ACT21, ACT25","Ax208a","N/A","N/A","N/A","N/A","N/A","To be filled","Professional background",NA
+"Ax208b","ACT19, ACT23, ACT21, ACT25","Ax208b","N/A","N/A","N/A","N/A","N/A","To be filled","Professional background",NA
+"Ax208c","N/A","Ax208c","N/A","N/A","N/A","N/A","N/A","To be filled","Professional background",NA
+"Ax208d","N/A","Ax208d","N/A","N/A","N/A","N/A","N/A","To be filled","Professional background",NA
+"Ax207a, Ax207b, Ax207c, Ax207d, Ax207e, Ax207f, Ax207g, Ax207h","N/A","Ax207a, Ax207b, Ax207c, Ax207d, Ax207e, Ax207f, Ax207g, Ax207h","N/A","N/A","N/A","N/A","N/A","To be filled","Professional background",NA
+"Ax208a, Ax208b, Ax208c, Ax208d","ACT19, ACT20, ACT23, ACT24, ACT21, ACT22, ACT25, ACT26","Ax208a, Ax208b, Ax208c, Ax208d","N/A","N/A","N/A","N/A","N/A","To be filled","Professional background",NA
+"Ax209","N/A","Ax209","N/A","N/A","N/A","N/A","N/A","To be filled","Professional background",NA
+"Ax210a","N/A","Ax210a","N/A","N/A","N/A","N/A","N/A","To be filled","Professional background",NA
+"Ax211","N/A","Ax211","N/A","N/A","N/A","N/A","N/A","To be filled","Professional background",NA
+"Ax32","ACT7, ACT8","Ax32","N/A","N/A","N/A","N/A","N/A","To be filled","Professional background",NA
+"Ax33","N/A","Ax33","N/A","N/A","N/A","N/A","N/A","To be filled","Professional background",NA
+"Ax35","N/A","Ax35","N/A","N/A","N/A","N/A","N/A","To be filled","Professional background",NA
+"Ax36","ACT31, ACT32","Ax36","N/A","N/A","N/A","N/A","N/A","To be filled","Professional background",NA
+"Ax37","ACT33, ACT34","Ax37","N/A","N/A","N/A","N/A","N/A","To be filled","Professional background",NA
+"Ax41","N/A","Ax41","N/A","N/A","N/A","N/A","N/A","To be filled","Professional background",NA
+"Ax42","N/A","Ax42","N/A","N/A","N/A","N/A","N/A","To be filled","Professional background",NA
+"Ax45","N/A","Ax45","N/A","N/A","N/A","N/A","N/A","To be filled","Professional background",NA
+"Ax46a, Ax46b","N/A","Ax46a, Ax46b","N/A","N/A","N/A","N/A","N/A","To be filled","Professional background",NA
+"Ax47","N/A","Ax47","N/A","N/A","N/A","N/A","N/A","To be filled","Professional background",NA
+"Ax51","N/A","Ax51","N/A","N/A","N/A","N/A","N/A","To be filled","Professional background",NA
+"Ax67","N/A","Ax67","N/A","N/A","N/A","N/A","N/A","To be filled","Professional background",NA
+"Ax701","N/A","Ax701","N/A","N/A","N/A","N/A","N/A","To be filled","Professional background",NA
+"Ax702a, Ax702b","N/A","Ax702a, Ax702b","N/A","N/A","N/A","N/A","N/A","To be filled","Professional background",NA
+"Ax703","RETP1, RETC1","Ax703","N/A","N/A","N/A","N/A","N/A","To be filled","Professional background",NA
+"Ax704","N/A","Ax704","N/A","N/A","N/A","N/A","N/A","To be filled","Professional background",NA
+"Ax705","RETP4, RETC4","Ax705","N/A","N/A","N/A","N/A","N/A","To be filled","Professional background",NA
+"Ax706","RETP5, RETC5","Ax706","N/A","N/A","N/A","N/A","N/A","To be filled","Professional background",NA
+"Ax707i","RETP7, RETC7","Ax707i","N/A","N/A","N/A","N/A","N/A","To be filled","Professional background",NA
+"Ax708","N/A","Ax708","N/A","N/A","N/A","N/A","N/A","To be filled","Professional background",NA
+"Ax709","N/A","Ax709","N/A","N/A","N/A","N/A","N/A","To be filled","Professional background",NA
+"Ax710","N/A","Ax710","N/A","N/A","N/A","N/A","N/A","To be filled","Professional background",NA
+"Ax711","N/A","Ax711","N/A","N/A","N/A","N/A","N/A","To be filled","Professional background",NA
+"Ax712","N/A","Ax712","N/A","N/A","N/A","N/A","N/A","To be filled","Professional background",NA
+"Ax713","N/A","Ax713","N/A","N/A","N/A","N/A","N/A","To be filled","Professional background",NA
+"Ax714","N/A","Ax714","N/A","N/A","N/A","N/A","N/A","To be filled","Professional background",NA
+"JEFRSO","DI7, DI8, DI9, DI10","JER03, JEC03, JER04, JEC04","JE81, JE82","JEFRSO","JEFRSO","JEFRSO","JEFRSO","To be filled","Youth",NA
+"JEAINEM, JEAINEF","N/A","N/A","N/A","N/A","N/A","JEAINEM, JEAINEF","JEAINEM, JEAINEF","To be filled","Youth",NA
+"JEAINE","DI11, DI12","JER05, JEC05","N/A","JEAINE","JEAINE","JEAINE","JEAINE","To be filled","Youth",NA
+"JEARGT","ENP5, ENC5","JER20, JEC20","JE6","JEARGT","JEARGT","JEARGT","JEARGT","To be filled","Youth",NA
+"JEGRAVE","N/A","JER21a, JEC21a","N/A","JEGRAVE","JEGRAVE","JEGRAVE","JEGRAVE","To be filled","Youth",NA
+"JEGRAVE_DIV","N/A","JER21a, JEC21a","N/A","JEGRAVE1","JEGRAVE1","JEGRAVE1","JEGRAVE_DIV","To be filled","Youth",NA
+"JEGRAVE_MALP","N/A","JER21b, JEC21b","N/A","JEGRAVE2","JEGRAVE2","JEGRAVE2","JEGRAVE_MALP","To be filled","Youth",NA
+"JEGRAVE_MALM","N/A","JER21c, JEC21c","N/A","JEGRAVE3","JEGRAVE3","JEGRAVE3","JEGRAVE_MALM","To be filled","Youth",NA
+"JEGRAVE_MALFS","N/A","N/A","N/A","N/A","N/A","N/A","JEGRAVE_MALFS","To be filled","Youth",NA
+"JEGRAVE_DISP","N/A","JER21d, JEC21d","N/A","JEGRAVE4","JEGRAVE4","JEGRAVE4","JEGRAVE_DISP","To be filled","Youth",NA
+"JEGRAVE_DCAS","N/A","JER21d, JEC21d","N/A","JEGRAVE5","JEGRAVE5","JEGRAVE5","JEGRAVE_DCAS","To be filled","Youth",NA
+"JEGRAVE_DCFS","N/A","N/A","N/A","JEGRAVE6","JEGRAVE6","JEGRAVE6","JEGRAVE_DCFS","To be filled","Youth",NA
+"JEGRAVE_AUT","N/A","JER21e, JEC21e","N/A","JEGRAVE7","JEGRAVE7","JEGRAVE7","JEGRAVE_AUT","To be filled","Youth",NA
+"JEQUIT","N/A","JER22, JEC22","N/A","JEQUIT","JEQUIT","JEQUIT","JEQUIT","To be filled","Youth",NA
+"JAGEQUIT","N/A","N/A","N/A","JAGEQUIT","JAGEQUIT","JAGEQUIT","JAGEQUIT","To be filled","Youth",NA
+"JEETUD","DI3, DI4","JEy01","JE1","JEETUD","ANFINETU","DATEFORA","DATEFORA","To be filled","Youth",NA
+"JAGETUD","N/A","N/A","N/A","JAGETUD","AGFINETU","AGFOR","AGFOR","To be filled","Youth",NA
+"JE2","ENP2, ENC2","JER07, JEC07","JE2","N/A","N/A","N/A","N/A","To be filled","Youth",NA
+"JE3","ENP3, ENC3","JER11, JEC11","JE3","N/A","N/A","N/A","N/A","To be filled","Youth",NA
+"JE4","ENP4, ENC4","JER12, JEC12","JE4","N/A","N/A","N/A","N/A","To be filled","Youth",NA
+"JE52,ENP6","ENC6""","JER16, JEC16","JE52","N/A","N/A","N/A","N/A","To be filled","Youth",NA
+"JE53","ENP8, ENC8","JER17, JEC17","JE53","N/A","N/A","N/A","N/A","To be filled","Youth",NA
+"JE54","N/A","N/A","JE54","N/A","N/A","N/A","N/A","To be filled","Youth",NA
+"JE55","N/A","N/A","JE55","N/A","N/A","N/A","N/A","To be filled","Youth",NA
+"JE51","ENP7, ENC7","JER18, JEC18","JE51","N/A","N/A","N/A","N/A","To be filled","Youth",NA
+"JE511","N/A","JER19, JEC19","JE511","N/A","N/A","N/A","N/A","To be filled","Youth",NA
+"JER02,JEC02","DI5, DI6","JER02, JEC02","N/A","N/A","N/A","N/A","N/A","To be filled","Youth",NA
+"JER06,JEC06","ENP1, ENC1","JER06, JEC06","N/A","N/A","N/A","N/A","N/A","To be filled","Youth",NA
+"JER09,JEC09","N/A","JER09, JEC09","N/A","N/A","N/A","N/A","N/A","To be filled","Youth",NA
+"JER09,JEC09","N/A","JER09, JEC09","N/A","N/A","N/A","N/A","N/A","To be filled","Youth",NA
+"JER10,JEC10","N/A","JER10, JEC10","N/A","N/A","N/A","N/A","N/A","To be filled","Youth",NA
+"JER13,JEC13","N/A","JER13, JEC13","N/A","N/A","N/A","N/A","N/A","To be filled","Youth",NA
+"JER14,JEC14","N/A","JER14, JEC14","N/A","N/A","N/A","N/A","N/A","To be filled","Youth",NA
+"JER15,JEC15","N/A","JER15, JEC15","N/A","N/A","N/A","N/A","N/A","To be filled","Youth",NA
+"ZCHOMAGE","N/A","N/A","N/A","N/A","ZCHOMAGE","ZCHOMAGE","ZCHOMAGE","ZCHOMAGE","Income",NA
+"ZCRDSM","N/A","N/A","N/A","N/A","N/A","ZCRDSM","ZCRDSM","ZCRDSM","Income",NA
+"ZCSGCRDS","N/A","N/A","N/A","N/A","ZCSGCRDS","ZCSGCRDS","ZCSGCRDS","ZCSGCRDS","Income",NA
+"ZCSGDM","N/A","N/A","N/A","N/A","N/A","ZCSGDM","ZCSGDM","ZCSGDM","Income",NA
+"ZCSGIM","N/A","N/A","N/A","N/A","N/A","ZCSGIM","ZCSGIM","ZCSGIM","Income",NA
+"ZCSGREVPAT","N/A","N/A","N/A","N/A","N/A","ZCSGREVPAT","ZCSGREVPAT","ZCSGREVPAT","Income",NA
+"ZETRANGER","N/A","N/A","N/A","N/A","N/A","ZETRANGER","ZETRANGER","ZETRANGER","Income",NA
+"ZFONCIER","N/A","N/A","N/A","N/A","ZFONCIER","ZFONCIER","ZFONCIER","ZFONCIER","Income",NA
+"ZIMPOM","N/A","N/A","N/A","N/A","ZIMPOM","ZIMPOM","ZIMPOM","ZIMPOM","Income",NA
+"ZIMPOT","N/A","N/A","N/A","N/A","ZIMPOT","ZIMPOT","N/A","N/A","Income",NA
+"ZIMPVALM","N/A","N/A","N/A","N/A","ZIMPVALM","ZIMPVALM","ZIMPVALM","ZIMPVALM","Income",NA
+"ZINVALIDITE","N/A","N/A","N/A","N/A","N/A","ZINVALIDITE","ZINVALIDITE","ZINVALIDITE","Income",NA
+"ZM_PPEM","N/A","N/A","N/A","N/A","ZM_PPEM","ZM_PPEM","N/A","N/A","Income","The """"prime pour l'emploi"""" policy ended on 31/12/2015."
+"ZNIVVIE","N/A","N/A","N/A","N/A","ZNIVVIE","ZNIVVIE","ZNIVVIE","ZNIVVIE","Income",NA
+"ZPENALIR","N/A","N/A","N/A","N/A","ZPENALIR","ZPENALIR","ZPENALIR","ZPENALIR","Income",NA
+"ZPENALIV","N/A","N/A","N/A","N/A","ZPENALIV","ZPENALIV","ZPENALIV","ZPENALIV","Income",NA
+"ZPFAMILLE","N/A","N/A","N/A","N/A","N/A","ZPFAMILLE","ZPFAMILLE","ZPFAMILLE","Income",NA
+"ZPLOGEMENT","N/A","N/A","N/A","N/A","N/A","ZPLOGEMENT","ZPLOGEMENT","ZPLOGEMENT","Income",NA
+"ZPREST_HORS_RD","N/A","N/A","N/A","N/A","N/A","ZPREST_HORS_RD","N/A","N/A","Income",NA
+"ZPRESTATION","N/A","N/A","N/A","N/A","N/A","ZPRESTATION","N/A","N/A","Income",NA
+"ZPRODFIN","N/A","N/A","N/A","N/A","N/A","ZPRODFIN","ZPRODFIN","ZPRODFIN","Income",NA
+"ZPSOCIAL","N/A","N/A","N/A","N/A","N/A","ZPSOCIAL","ZPSOCIAL","ZPSOCIAL","Income",NA
+"ZPSOCM","N/A","N/A","N/A","N/A","ZPSOCM","ZPSOCM","ZPSOCM","ZPSOCM","Income",NA
+"ZRAC","N/A","N/A","N/A","N/A","N/A","ZRAC","ZRAC","ZRAC","Income",NA
+"ZRAG","N/A","N/A","N/A","N/A","ZRAG","ZRAG","ZRAG","ZRAG","Income",NA
+"ZRENTES","N/A","N/A","N/A","N/A","ZRENTES","ZRENTES","ZRENTES","ZRENTES","Income",NA
+"ZRETRAITES","N/A","N/A","N/A","N/A","N/A","ZRETRAITES","ZRETRAITES","ZRETRAITES","Income",NA
+"ZRETRAITES_STRICTES","N/A","N/A","N/A","N/A","ZRETRAITES","ZRETRAITES_STRICTES","ZRETRAITES_STRICTES","ZRETRAITES_STRICTES","Income","ZRETRAITES in 2010 is the equivalent of ZRETRAITES_STRICTES"
+"ZREVDEC","N/A","N/A","N/A","N/A","ZREVDEC","ZREVDEC","ZREVDEC","ZREVDEC","Income",NA
+"ZREVDISP","N/A","N/A","N/A","N/A","ZREVDISP","ZREVDISP","ZREVDISP","ZREVDISP","Income",NA
+"ZREVFIN","N/A","N/A","N/A","N/A","ZREVFIN","ZREVFIN","ZREVFIN","ZREVFIN","Income",NA
+"ZRIC","N/A","N/A","N/A","N/A","ZRIC","ZRIC","ZRIC","ZRIC","Income",NA
+"ZRNC","N/A","N/A","N/A","N/A","ZRNC","ZRNC","ZRNC","ZRNC","Income",NA
+"ZSALAIRES","N/A","N/A","N/A","N/A","ZSALAIRES","ZSALAIRES","ZSALAIRES","ZSALAIRES","Income",NA
+"ZTHAB","N/A","N/A","N/A","N/A","N/A","ZTHAB","ZTHAB","ZTHAB","Income",NA
+"ZVALM","N/A","N/A","N/A","N/A","N/A","ZVALM","ZVALM","ZVALM","Income",NA
+"ZVAMM","N/A","N/A","N/A","N/A","N/A","ZVAMM","ZVAMM","ZVAMM","Income",NA
