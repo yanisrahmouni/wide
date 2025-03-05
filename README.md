@@ -113,4 +113,4 @@ Démographiques (INED)**, where our team is based, for fostering an
 environment that supports our research activities. We also extend our
 thanks to the **Agence Nationale de la Recherche (ANR)** for their
 valuable funding, which has been instrumental in the successful
-realization of the project.
+realization of the project (ANR grant ANR-21-CE41-0017).
